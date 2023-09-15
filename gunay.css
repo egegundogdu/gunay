@@ -95,7 +95,8 @@ a {
     top: 60px;
     height: 0;
     width: 170px;
-    background-color: white;
+     background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     margin-top: 70px;
