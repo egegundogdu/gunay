@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>G-Vitamini</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+
+            font-family: 'Poppins', sans-serif;
+        }
+         @media( max-width:1300px){
+            .gayri{
+                justify-content: center;
+            }
+         }
+
+        header {
+            position: relative;
+            padding: 0 2rem;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 130px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: ghostwhite;
+            border-radius: 50px;
+
+        }
+
+        .navbar .links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        a {
+            font-size: 1.4rem;
+        }
+
+        .navbar .links li {
+            margin: 20px;
+        }
+
+        .navbar .links li a {
+            color: #3b61a8;
+
+        }
+
+        .navbar .links li a:hover {
+            color: #eb6435;
+            transition: 0.3s;
+        }
+
+
+
+
+        .navbar .toggle_btn {
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: none;
+        }
+
+        .navbar .yanlink {
+            display: flex;
+            margin-right: 80px;
+        }
+
+        .navbar .yanlink li {
+            margin-left: 50px;
+        }
+
+        .dropdown_menu {
+            position: absolute;
+            right: 2rem;
+            top: 60px;
+            height: 0;
+            width: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 70px;
+            display: none;
+            transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .dropdown_menu li {
+            padding: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3b61a8;
+        }
+
+        .dropdown_menu.open {
+            height: 500px;
+        }
+
+        .dropdown_menu li a {
+            color: #3b61a8;
+        }
+
+        .dropdown_menu li a:hover {
+            transition: 0.3s;
+            color: #eb6435;
+        }
+
+        @media (max-width: 1500px) {
+
+            .navbar .links,
+            .navbar .yanlink {
+                display: none;
+            }
+
+            .navbar .toggle_btn {
+                display: block;
+                margin-right: 130px;
+            }
+
+            .dropdown_menu {
+                display: block;
+            }
+       
+
+        }
+        
+
+        .neden {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 250px;
+            margin: 100px;
+        }
+
+        .neden span {
+            color: #eb6435;
+        }
+
+        .footer4 {
+            background-color: #3b61a8;
+            height: 1px;
+            width: 100%;
+            margin-top: 100px;
+        }
+        
+
+        .footer5 {
+            height: 100px;
+            width: 100%;
+            background-color: ghostwhite;
+        }
+        
+        
+
+
+
+
+
+        .gayri1 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 100px;
+            align-items: center;
+            text-align: center;
+        }
+        .gayri1  ul li{
+            font-size: 25px;
+        }
+        
+
+
+
+
+
+
+
+         @media (max-width: 576px) {
+            .dropdown_menu {
+                left: 2rem;
+                width: unset;
+            }
+
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"><img
+                        style="height: 150px; width: 150px; margin-left: 120px; margin-top: 15px;"
+                        src="yazilim resimleri/günay.png" alt=""></a></div>
+
+            <ul class="links">
+                <li><a href="gunay.html">Ana Sayfa</a></li>
+                <li><a href="gunaysahin.html">Günay Şahin</a></li>
+                <li><a href="Gvitamini.html">G-Vitamini</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+            <ul class="yanlink">
+                <li><a href="mailto:gunaysahin@gmail.com"><i class="fa-solid fa-envelope" style="color: #eb6435;"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/_gunaysahin_/"><i class="fa-brands fa-instagram" style="color: #eb6435;"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: #eb6435;"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa-brands fa-linkedin" style="color: #eb6435;"></i></a></li>
+                <li><a href="tel:+905333180841"><i class="fa-solid fa-phone-volume fa-beat" style="color: #eb6435;"></i></a></li>
+            </ul>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="gunay.html">Ana Sayfa</a></li>
+            <li><a href="gunaysahin.html">Günay Şahin</a></li>
+            <li><a href="Gvitamini.html">G-Vitamini</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="mailto:gunaysahin@gmail.com"><i class="fa-solid fa-envelope fa-beat" style="color: #eb6435;"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/_gunaysahin_/"><i class="fa-brands fa-instagram" style="color: #eb6435;"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: #eb6435;"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa-brands fa-linkedin" style="color: #eb6435;"></i></a></li>
+            <li><a href="tel:+5333180841"><i class="fa-solid fa-phone-volume fa-beat" style="color: #eb6435;"></i></a></li>
+
+        </div>
+
+
+    </header>
+    <div class="neden">
+        <h1 id="ned" style="font-size: 60px;color: #eb6435;">Neden G-Vitamini ?</h1>
+        <p style="margin-top: 50px; font-size: 30px;"><span> Bu eğitimleri alan Gayrimenkul Danışmanlarının;</span>
+            satış ve kiralama süreçlerinin en başından
+            sonuna kadar verecekleri <span>profesyonel hizmet</span> ve sonrasında yaratacakları <span>müşteri
+                memnuniyeti</span> sayesinde, gerek portföy alma gerekse mevcut müşterileri ile ilişkilerini
+            <span>güven
+                ve istikrar</span> zemininde devam ettirebilme konularında önemli yol kat edecekleri kanaatindeyim.
+        </p>
+
+    </div>
+    <h1 style="font-size: 60px;color: #eb6435; text-align: center; margin-top: 170px;"> Eğitim Başlıklarımız :</h1>
+
+
+    <div class="gayri1">
+
+
+        <p>
+        <ul style="margin-bottom: 30px;">
+            <li id="gayr" style="font-size: 40px; margin-top: 50px; font-weight: 600; color: #eb6435;">Gayrimenkul Değer Artışı</li> <br>
+            <li>Hangi Gayrimenkuller Değer Artış Kazancı Vergisine Tabidir?</li>
+            <li>Miras Yoluyla Edinilen Taşınmazlar</li>
+            <li>Arsa Karşılığı Edinilen Taşınmazlar</li>
+            <li>Değer Artış Kazancı Mı, Ticari Kazanç Mı?</li>
+            <li>İstisna Tutarları Ve Vergiden İndirilebilecek Kalemler</li>
+            <li>Kimler Beyanname Vermek Zorundadır?</li>
+            <li>Beyanname Ne Zaman Verilir, Vergi Ne Zaman Ödenir?</li>
+        </ul>
+        </p>
+
+        
+    </div>
+
+
+
+    <div class="gayri1">
+
+        <p>
+        <ul style="margin-bottom: 30px;">
+            <li id="kir" style="font-size: 40px; font-weight: 600; color: #eb6435;">Kira Sözleşmeleri</li> <br>
+            <li>Kira sözleşmelerinin düzenlenmesinde ve imzalanmasında dikkat edilmesi gereken hususlar</li>
+            <li>Borçlar kanununun kira sözleşmelerine ilişkin önemli hükümleri</li>
+            <li>Örnek kira sözleşmesi incelemesi</li>
+            <li>Taşınmaz teslimi ve anahtar teslimi ile ilgili önemli hususlar</li>
+            <li>Kira sözleşmesinin süresi ve yenilenmesi</li>
+            <li>Tahliye taahhüdü </li>
+            <li>Kira sözleşmelerinde kefalet</li>
+            <li>Kira artışı</li>
+            <li>Kiracılı taşınmazların satışı</li>
+            <li>İhtiyaç nedeniyle tahliye şartları</li>
+            <li>Kiracının temerrüdü ve haklı ihtar çekme şartları</li>
+            <li>Kira tespit davası </li>
+            <li>10 yıllık süre sonunda tahliye talebi</li>
+            <li>İşyeri kira sözleşmeleri ile ilgili önemli hususlar
+            </li>
+        </ul>
+        </p>
+        
+    </div>
+
+
+    <div class="gayri1">
+
+        <p>
+        <ul style="margin-bottom: 30px;">
+            <li id="tem" style="font-size: 40px; font-weight: 600; color: #eb6435;">Temel İmar Bilgileri</li> <br>
+            <li>İmar Mevzuatı</li>
+            <li>İmar Terimleri </li>
+            <li>İmar Planlarının Okunması</li>
+            <li>İmar Planları</li>
+            <li>Planlama Kademeleri</li>
+            <li>İmar Alanları</li>
+            <li>İmar Uygulamaları (18. Madde, DOP, İfraz, Tevhid, Kamulaştırma)
+            </li>
+            <li>İnşaat Yapım Aşamaları</li>
+            <li>Arazi Arsa Ve Konut Satışında İstenmesi Gereken Dökümanlar</li>
+
+        </ul>
+        </p>
+        
+    </div>
+
+
+    <div class="gayri1">
+
+        <p>
+        <ul style="margin-bottom: 30px;">
+            <li id="tap" style="font-size: 40px; font-weight: 600; color: #eb6435;">Tapu ve Gayrimenkul Mevzuatı</li> <br>
+            <li>Tapu Bizim Herşeyimiz mi?</li>
+            <li>Taşınmaz Türlerine Göre, Tapu Haricinde Alınması Gereken Belgeler</li>
+            <li>Tapu Türleri (Arsa, Arazi, Konut,İşyeri) </li>
+            <li>Kat İrtikafı, Kat Mülkiyeti </li>
+            <li>Mülkiyet Türleri (Müşterek Mülkiyet, Elbirliği Mülkiyet)</li>
+            <li>Tapu Sicilinin Unsurları ve İlkeleri</li>
+            <li>Tapu Kaydında Şerh-Beyan-İrtifak Kontrolü</li>
+            <li>Başlıca Şerhler (Aile Konutu Şerhi, Kira Şerhi, Kamulaştırma Şerhi İpotek, İcrai Haciz, Kamu Haczi)
+            </li>
+            <li>Ayni Haklar (İntifa Hakkı, Ön Alım Hakkı, Oturma Hakkı)</li>
+
+        </ul>
+        </p>
+       
+    </div>
+
+
+    <div class="gayri1">
+
+        <p>
+        <ul style="margin-bottom: 30px;">
+            <li id="bon" style="font-size: 40px; font-weight: 600; color: #eb6435;">Bonus Eğitimler</li> <br>
+            <li>Gayrimenkul Danışmanlarının Sorumlulukları</li>
+            <li>Yeni Başlayanlar İçin Yol Haritası</li>
+            <li>Fark Yaratan Gayrimenkul Danışmanı Olmak</li>
+            <li> Sorunsuz Bir Satış Ve Kiralama Süreci İçin Yol Haritası</li>
+
+        </ul>
+        </p>
+     
+    </div>
+
+    <div class="footer4">
+
+    </div>
+    <div class="footer5">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+
+    </script>
+
+</body>
+
+</html>

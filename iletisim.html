@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Vitamini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            position: relative;
+            padding: 0 2rem;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 130px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: ghostwhite;
+            border-radius: 50px;
+
+        }
+
+        .navbar .links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        a {
+            font-size: 1.4rem;
+        }
+
+        .navbar .links li {
+            margin: 20px;
+        }
+
+        .navbar .links li a {
+            color: #3b61a8;
+
+        }
+
+        .navbar .links li a:hover {
+            color: #eb6435;
+            transition: 0.3s;
+        }
+
+
+
+
+        .navbar .toggle_btn {
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: none;
+        }
+
+        .navbar .yanlink {
+            display: flex;
+            margin-right: 80px;
+        }
+
+        .navbar .yanlink li {
+            margin-left: 50px;
+        }
+
+        .dropdown_menu {
+            position: absolute;
+            right: 2rem;
+            top: 60px;
+            height: 0;
+            width: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 70px;
+            display: none;
+            transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .dropdown_menu li {
+            padding: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3b61a8;
+        }
+
+        .iletisim2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 100px;
+            flex-wrap: wrap;
+            text-align: center;
+
+
+        }
+
+        .iletisim3 {
+            padding: 30px;
+            margin: 50px;
+        }
+
+        .iletisim6 {
+            margin: 50px;
+
+        }
+
+
+
+        .dropdown_menu.open {
+            height: 500px;
+        }
+
+        .dropdown_menu li a {
+            color: #3b61a8;
+        }
+
+        .dropdown_menu li a:hover {
+            transition: 0.3s;
+            color: #eb6435;
+
+        }
+
+        .footer7 {
+            height: 1px;
+            background-color: #3b61a8;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .footer8 {
+            height: 100px;
+            width: 100%;
+            background-color: ghostwhite;
+        }
+
+        @media (max-width: 1500px) {
+
+            .navbar .links,
+            .navbar .yanlink {
+                display: none;
+            }
+
+            .navbar .toggle_btn {
+                display: block;
+                margin-right: 130px;
+            }
+
+            .dropdown_menu {
+                display: block;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"><img
+                        style="height: 150px; width: 150px; margin-left: 120px; margin-top: 15px;"
+                        src="yazilim resimleri/günay.png" alt=""></a></div>
+
+            <ul class="links">
+                <li><a href="gunay.html">Ana Sayfa</a></li>
+                <li><a href="gunaysahin.html">Günay Şahin</a></li>
+                <li><a href="Gvitamini.html">G-Vitamini</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+            <ul class="yanlink">
+                <li><a href="mailto:gunaysahin@gmail.com"><i class="fa-solid fa-envelope" style="color: #eb6435;"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/_gunaysahin_/"><i class="fa-brands fa-instagram" style="color: #eb6435;"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: #eb6435;"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa-brands fa-linkedin" style="color: #eb6435;"></i></a></li>
+                <li><a href="tel:+905333180841"><i class="fa-solid fa-phone-volume fa-beat" style="color: #eb6435;"></i></a></li>
+            </ul>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="gunay.html">Ana Sayfa</a></li>
+            <li><a href="gunaysahin.html">Günay Şahin</a></li>
+            <li><a href="Gvitamini.html">G-Vitamini</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="mailto:gunaysahin@gmail.com"><i class="fa-solid fa-envelope fa-beat" style="color: #eb6435;"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/_gunaysahin_/"><i class="fa-brands fa-instagram" style="color: #eb6435;"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: #eb6435;"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa-brands fa-linkedin" style="color: #eb6435;"></i></a></li>
+            <li><a href="tel:+905333180841"><i class="fa-solid fa-phone-volume fa-beat" style="color: #eb6435;"></i></a></li>
+
+        </div>
+
+
+    </header>
+
+    <div class="box">
+        <div class="iletisim2">
+
+            <div style="background-color: #0399cd; border-radius: 40px; color: white;" class="iletisim3">
+                <h3 style="font-size: 50px;">Günay Şahin</h3> <br>
+                <p style="font-size: 30px;">
+                    Startkey Alfa Gayrimenkul <br> Broker/Manager <br> Gayrimenkul Değerleme Uzmanı <br> <br> <i
+                        class="fa-solid fa-phone-volume fa-bounce"></i> 0 (533) 318
+                    08
+                    41 <br> <i class="fa-brands fa-instagram fa-bounce"></i> _gunaysahin_ <br> <i
+                        class="fa-solid fa-envelope-open-text"></i> gunaysahin@gmail.com
+                </p>
+            </div>
+
+            <div class="iletisim6">
+                <img style="width: 500px; padding: 20px; border-radius: 40px;" src="yazilim resimleri/günayfoto.jpg"
+                    alt="">
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="footer7">
+
+    </div>
+    <div class="footer8">
+
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+
+    </script>
+
+</body>
+
+</html>
