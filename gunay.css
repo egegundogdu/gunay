@@ -76,7 +76,7 @@ a {
 
 .navbar .toggle_btn {
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 3rem;
     display: none;
 }
 
@@ -153,7 +153,7 @@ a {
 }
 
 .ana5 {
-    font-size: 25px;
+    font-size: 20px;
     width: 60%;
     text-align: center;
 
