@@ -40,6 +40,15 @@ header {
 @keyframes slideLeft{
     from {transform:  translateX(300%)}
 }
+#biz{
+     animation-name: slideRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes slideRight{
+    from {transform:  translateX(300%)}
+}
 
 .basari {
     display: flex;
