@@ -47,7 +47,7 @@ header {
     animation-timing-function: ease-in-out;
 }
 @keyframes slideRight{
-    from {transform:  translateX(300%)}
+    from {transform:  translateY(300%)}
 }
 
 .basari {
