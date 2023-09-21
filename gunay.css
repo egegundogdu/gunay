@@ -20,14 +20,7 @@ header {
     
     background-blend-mode: darken;
     right: 0;
-    
-
-
-
-
 }
-
-
 .navbar {
     width: 100%;
     height: 130px;
@@ -37,7 +30,15 @@ header {
     justify-content: space-between;
     z-index: 100;
 
-
+}
+#has2 {
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes slideLeft{
+    from {transform:  translateX(300%)}
 }
 
 .basari {
