@@ -6,7 +6,11 @@
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
+    
+}
+body{
     overlow-x: hidden;
+
 }
 
 
